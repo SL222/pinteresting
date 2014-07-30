@@ -79,7 +79,7 @@ Pinteresting::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
   # Required for Heroku
   #Note to set this to your actual host
-  config.action_mailer.default_url_options = { :host => 'http://saul-pinteresting.herokuapp.com/' }
+  config.action_mailer.default_url_options = { :host => 'http://landerpinboard.herokuapp.com/' }
 
 # Sets Paperclip to upload images to Amazon S3
 config.paperclip_defaults = {
