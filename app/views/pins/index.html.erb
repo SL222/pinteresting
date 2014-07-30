@@ -5,7 +5,12 @@
     <div class="box panel panel-default">
       <%= link_to image_tag(pin.image.url(:medium)), pin %>
       <div class="panel-body">
+        <%= pin.title %><br/>
+        <%= pin.isbn %><br/>
+        <%= pin.price %><br/>
         <%= pin.description %><br/>
+        <%= pin.contact %><br/>
+
         <strong><%= pin.user.name if pin.user %></strong>
         
         <% if current_user && (pin.user == current_user) %>
