@@ -4,13 +4,14 @@
   <% @pins.each do |pin| %>
     <div class="box panel panel-default">
       <%= link_to image_tag(pin.image.url(:medium)), pin %>
-      <div class="panel-body">
-        <%= pin.title %><br/>
-        <%= pin.author %><br/>
-        <%= pin.isbn %><br/>
-        <%= pin.price %><br/>
-        <%= pin.description %><br/>
+      <div class="panel-body"><strong>TITLE: </strong>
+        <%= pin.title %><br/><strong>AUTHOR: </strong>
+        <%= pin.author %><br/><strong>ISBN: </strong>#
+        <%= pin.isbn %><br/><strong>PRICE: </strong>$
+        <%= pin.price %><br/><strong>DESCRIPTION: </strong>
+        <%= pin.description %><br/><strong>CONTACT: </strong><span class="glyphicon glyphicon-earphone"></span> <span class="glyphicon glyphicon-envelope"></span>
         <%= pin.contact %><br/>
+        <span class="glyphicon glyphicon-user"></span>
 
         <strong><%= pin.user.name if pin.user %></strong>
         
