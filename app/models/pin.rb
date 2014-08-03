@@ -9,4 +9,5 @@ class Pin < ActiveRecord::Base
   validates :price, presence: true
   validates :contact, presence: true
   validates :title, presence: true
+  validates :author, presence: true
 end
